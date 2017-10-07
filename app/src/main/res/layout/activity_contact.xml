@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3f3f3f">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/skill_container_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginTop="1dp"
+        android:background="#6a6a6a" />
+
+    <in.myinnos.alphabetsindexfastscrollrecycler.IndexFastScrollRecyclerView
+        android:id="@+id/recyclerViewContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/skill_container_scroll" />
+
+
+    <in.myinnos.alphabetsindexfastscrollrecycler.IndexFastScrollRecyclerView
+        android:id="@+id/fast_scroller"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/skill_container_scroll"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        app:elevation="4dp" />
+
+</RelativeLayout>
